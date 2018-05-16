@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DE10E5A520F9BBC6C3BE1ED /* Pods_YouTubeVideoTagger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4898288B7393A48128A1C47B /* Pods_YouTubeVideoTagger.framework */; };
 		956320ED20A515E80016D904 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956320EC20A515E80016D904 /* AppDelegate.swift */; };
 		956320EF20A515E90016D904 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956320EE20A515E90016D904 /* ViewController.swift */; };
 		956320F220A515E90016D904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956320F020A515E90016D904 /* Main.storyboard */; };
 		956320F420A515E90016D904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956320F320A515E90016D904 /* Assets.xcassets */; };
 		956320F720A515E90016D904 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956320F520A515E90016D904 /* LaunchScreen.storyboard */; };
+		956320FF20A5BE890016D904 /* YouTubeVideoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956320FE20A5BE890016D904 /* YouTubeVideoListModel.swift */; };
+		9563210120A5E2BE0016D904 /* YouTubeVideoListQueryWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9563210020A5E2BE0016D904 /* YouTubeVideoListQueryWorker.swift */; };
+		9563210320A6027D0016D904 /* YouTubeVideoListQueryCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9563210220A6027D0016D904 /* YouTubeVideoListQueryCallback.swift */; };
+		9563210A20A610660016D904 /* YouTubeVideoListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9563210820A610660016D904 /* YouTubeVideoListViewCell.swift */; };
+		9563210B20A610660016D904 /* YouTubeVideoListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9563210920A610660016D904 /* YouTubeVideoListViewCell.xib */; };
+		9563210D20A750280016D904 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9563210C20A750280016D904 /* GoogleService-Info.plist */; };
+		9563210F20A910E80016D904 /* youtube-data-api-key.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9563210E20A910E80016D904 /* youtube-data-api-key.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4898288B7393A48128A1C47B /* Pods_YouTubeVideoTagger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouTubeVideoTagger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7336BB049FC6926146E4470C /* Pods-YouTubeVideoTagger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubeVideoTagger.release.xcconfig"; path = "Pods/Target Support Files/Pods-YouTubeVideoTagger/Pods-YouTubeVideoTagger.release.xcconfig"; sourceTree = "<group>"; };
 		956320E920A515E80016D904 /* YouTubeVideoTagger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeVideoTagger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		956320EC20A515E80016D904 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		956320EE20A515E90016D904 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +32,14 @@
 		956320F320A515E90016D904 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		956320F620A515E90016D904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		956320F820A515E90016D904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		956320FE20A5BE890016D904 /* YouTubeVideoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeVideoListModel.swift; sourceTree = "<group>"; };
+		9563210020A5E2BE0016D904 /* YouTubeVideoListQueryWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeVideoListQueryWorker.swift; sourceTree = "<group>"; };
+		9563210220A6027D0016D904 /* YouTubeVideoListQueryCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeVideoListQueryCallback.swift; sourceTree = "<group>"; };
+		9563210820A610660016D904 /* YouTubeVideoListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeVideoListViewCell.swift; sourceTree = "<group>"; };
+		9563210920A610660016D904 /* YouTubeVideoListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YouTubeVideoListViewCell.xib; sourceTree = "<group>"; };
+		9563210C20A750280016D904 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9563210E20A910E80016D904 /* youtube-data-api-key.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "youtube-data-api-key.txt"; sourceTree = SOURCE_ROOT; };
+		CC54F4A1FFFC1F90AC6A2E03 /* Pods-YouTubeVideoTagger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubeVideoTagger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouTubeVideoTagger/Pods-YouTubeVideoTagger.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DE10E5A520F9BBC6C3BE1ED /* Pods_YouTubeVideoTagger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		532816A6EE6FE09301172E6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4898288B7393A48128A1C47B /* Pods_YouTubeVideoTagger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7ED06E850A56B3EC66E3C46F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC54F4A1FFFC1F90AC6A2E03 /* Pods-YouTubeVideoTagger.debug.xcconfig */,
+				7336BB049FC6926146E4470C /* Pods-YouTubeVideoTagger.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		956320E020A515E80016D904 = {
 			isa = PBXGroup;
 			children = (
 				956320EB20A515E80016D904 /* YouTubeVideoTagger */,
 				956320EA20A515E80016D904 /* Products */,
+				7ED06E850A56B3EC66E3C46F /* Pods */,
+				532816A6EE6FE09301172E6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +92,19 @@
 		956320EB20A515E80016D904 /* YouTubeVideoTagger */ = {
 			isa = PBXGroup;
 			children = (
+				9563210E20A910E80016D904 /* youtube-data-api-key.txt */,
+				9563210C20A750280016D904 /* GoogleService-Info.plist */,
 				956320EC20A515E80016D904 /* AppDelegate.swift */,
 				956320EE20A515E90016D904 /* ViewController.swift */,
 				956320F020A515E90016D904 /* Main.storyboard */,
 				956320F320A515E90016D904 /* Assets.xcassets */,
 				956320F520A515E90016D904 /* LaunchScreen.storyboard */,
 				956320F820A515E90016D904 /* Info.plist */,
+				956320FE20A5BE890016D904 /* YouTubeVideoListModel.swift */,
+				9563210020A5E2BE0016D904 /* YouTubeVideoListQueryWorker.swift */,
+				9563210220A6027D0016D904 /* YouTubeVideoListQueryCallback.swift */,
+				9563210820A610660016D904 /* YouTubeVideoListViewCell.swift */,
+				9563210920A610660016D904 /* YouTubeVideoListViewCell.xib */,
 			);
 			path = YouTubeVideoTagger;
 			sourceTree = "<group>";
@@ -71,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 956320FB20A515E90016D904 /* Build configuration list for PBXNativeTarget "YouTubeVideoTagger" */;
 			buildPhases = (
+				6DD9C686C58F6087F03E808D /* [CP] Check Pods Manifest.lock */,
 				956320E520A515E80016D904 /* Sources */,
 				956320E620A515E80016D904 /* Frameworks */,
 				956320E720A515E80016D904 /* Resources */,
+				A2A93ACA62FC21940865458C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,21 +169,75 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9563210B20A610660016D904 /* YouTubeVideoListViewCell.xib in Resources */,
 				956320F720A515E90016D904 /* LaunchScreen.storyboard in Resources */,
+				9563210D20A750280016D904 /* GoogleService-Info.plist in Resources */,
 				956320F420A515E90016D904 /* Assets.xcassets in Resources */,
 				956320F220A515E90016D904 /* Main.storyboard in Resources */,
+				9563210F20A910E80016D904 /* youtube-data-api-key.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DD9C686C58F6087F03E808D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YouTubeVideoTagger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2A93ACA62FC21940865458C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YouTubeVideoTagger/Pods-YouTubeVideoTagger-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YouTubeVideoTagger/Pods-YouTubeVideoTagger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		956320E520A515E80016D904 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9563210320A6027D0016D904 /* YouTubeVideoListQueryCallback.swift in Sources */,
+				9563210120A5E2BE0016D904 /* YouTubeVideoListQueryWorker.swift in Sources */,
+				9563210A20A610660016D904 /* YouTubeVideoListViewCell.swift in Sources */,
 				956320EF20A515E90016D904 /* ViewController.swift in Sources */,
 				956320ED20A515E80016D904 /* AppDelegate.swift in Sources */,
+				956320FF20A5BE890016D904 /* YouTubeVideoListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,11 +372,13 @@
 		};
 		956320FC20A515E90016D904 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC54F4A1FFFC1F90AC6A2E03 /* Pods-YouTubeVideoTagger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WYU94KP868;
 				INFOPLIST_FILE = YouTubeVideoTagger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.serge45497.app.YouTubeVideoTagger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,11 +389,13 @@
 		};
 		956320FD20A515E90016D904 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7336BB049FC6926146E4470C /* Pods-YouTubeVideoTagger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WYU94KP868;
 				INFOPLIST_FILE = YouTubeVideoTagger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.serge45497.app.YouTubeVideoTagger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
