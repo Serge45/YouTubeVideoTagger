@@ -10,11 +10,21 @@ import FirebaseMLVision
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, YouTubeVideoListQueryCallback {
     @IBOutlet weak var videoListView: UITableView!
-    @IBOutlet weak var tagLabel: UILabel!
+    var tagCollectionViewController: TagCollectionViewController?
     var videoQueryWorker: YouTubeVideoListQueryWorker?
     var videoQueryResult: YouTubeVideoListModel?
     var labelDetector: VisionLabelDetector?
     lazy var vision: Vision = Vision.vision()
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.destination {
+            
+        case let viewController as TagCollectionViewController:
+            self.tagCollectionViewController = viewController
+        default:
+            break
+        }
+    }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let uiImage = (tableView.cellForRow(at: indexPath) as! YouTubeVideoListViewCell).thumbnailImage
@@ -24,17 +34,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.labelDetector?.detect(in: vImage) {
                 (labels, error) in
                 guard error == nil, let labels = labels, !labels.isEmpty else {
+                    self.tagCollectionViewController?.tags.removeAll()
                     return
                 }
                 
-                var tagString = ""
+                self.tagCollectionViewController?.tags.removeAll()
                 
                 for label in labels {
-                    tagString.append(label.label)
-                    tagString.append(", ")
+                    self.tagCollectionViewController?.tags.append(label.label)
                 }
                 
-                self.tagLabel.text = tagString
+                self.tagCollectionViewController?.collectionView?.reloadData()
+                self.tagCollectionViewController?.collectionView?.setNeedsLayout()
             }
         }
     }
@@ -71,18 +82,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.videoListView.reloadData()
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupVideoListView()
+        self.setupTagCollectionView()
+        self.videoQueryWorker?.queryVideoList()
+        self.labelDetector = vision.labelDetector()
+    }
+    
+    fileprivate func setupVideoListView() {
         let nib = UINib(nibName: "YouTubeVideoListViewCell", bundle: nil)
         self.videoListView.register(nib, forCellReuseIdentifier: "VideoListViewCell")
         self.videoQueryWorker = YouTubeVideoListQueryWorker()
         self.videoQueryWorker?.videoQueryObservers.append(self)
         self.videoListView.dataSource = self
         self.videoListView.delegate = self
-        self.videoQueryWorker?.queryVideoList()
-        
-        self.labelDetector = vision.labelDetector()
+    }
+    
+    fileprivate func setupTagCollectionView() {
     }
 
     override func didReceiveMemoryWarning() {

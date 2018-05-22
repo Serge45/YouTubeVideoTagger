@@ -20,6 +20,9 @@
 		9563210B20A610660016D904 /* YouTubeVideoListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9563210920A610660016D904 /* YouTubeVideoListViewCell.xib */; };
 		9563210D20A750280016D904 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9563210C20A750280016D904 /* GoogleService-Info.plist */; };
 		9563210F20A910E80016D904 /* youtube-data-api-key.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9563210E20A910E80016D904 /* youtube-data-api-key.txt */; };
+		9563212020B081760016D904 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9563211E20B081750016D904 /* TagCollectionViewCell.swift */; };
+		9563212120B081760016D904 /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9563211F20B081750016D904 /* TagCollectionViewCell.xib */; };
+		9563212320B0860F0016D904 /* TagCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9563212220B0860F0016D904 /* TagCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		9563210920A610660016D904 /* YouTubeVideoListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YouTubeVideoListViewCell.xib; sourceTree = "<group>"; };
 		9563210C20A750280016D904 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		9563210E20A910E80016D904 /* youtube-data-api-key.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "youtube-data-api-key.txt"; sourceTree = SOURCE_ROOT; };
+		9563211E20B081750016D904 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
+		9563211F20B081750016D904 /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
+		9563212220B0860F0016D904 /* TagCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCollectionViewController.swift; sourceTree = "<group>"; };
 		CC54F4A1FFFC1F90AC6A2E03 /* Pods-YouTubeVideoTagger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubeVideoTagger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YouTubeVideoTagger/Pods-YouTubeVideoTagger.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +111,9 @@
 				9563210220A6027D0016D904 /* YouTubeVideoListQueryCallback.swift */,
 				9563210820A610660016D904 /* YouTubeVideoListViewCell.swift */,
 				9563210920A610660016D904 /* YouTubeVideoListViewCell.xib */,
+				9563211E20B081750016D904 /* TagCollectionViewCell.swift */,
+				9563211F20B081750016D904 /* TagCollectionViewCell.xib */,
+				9563212220B0860F0016D904 /* TagCollectionViewController.swift */,
 			);
 			path = YouTubeVideoTagger;
 			sourceTree = "<group>";
@@ -170,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9563210B20A610660016D904 /* YouTubeVideoListViewCell.xib in Resources */,
+				9563212120B081760016D904 /* TagCollectionViewCell.xib in Resources */,
 				956320F720A515E90016D904 /* LaunchScreen.storyboard in Resources */,
 				9563210D20A750280016D904 /* GoogleService-Info.plist in Resources */,
 				956320F420A515E90016D904 /* Assets.xcassets in Resources */,
@@ -233,8 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9563210320A6027D0016D904 /* YouTubeVideoListQueryCallback.swift in Sources */,
+				9563212320B0860F0016D904 /* TagCollectionViewController.swift in Sources */,
 				9563210120A5E2BE0016D904 /* YouTubeVideoListQueryWorker.swift in Sources */,
 				9563210A20A610660016D904 /* YouTubeVideoListViewCell.swift in Sources */,
+				9563212020B081760016D904 /* TagCollectionViewCell.swift in Sources */,
 				956320EF20A515E90016D904 /* ViewController.swift in Sources */,
 				956320ED20A515E80016D904 /* AppDelegate.swift in Sources */,
 				956320FF20A5BE890016D904 /* YouTubeVideoListModel.swift in Sources */,
