@@ -20,13 +20,17 @@ class TagCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupViewCellIdentifier()
+        let flowLayout = self.collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
+        flowLayout.minimumInteritemSpacing = 10000000
+        flowLayout.scrollDirection = .horizontal
+        self.collectionView?.collectionViewLayout = flowLayout
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     /*
     // MARK: - Navigation
 
