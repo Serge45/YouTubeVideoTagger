@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A demo project for tagging YouTube video via Google MLKit, it generate tags for currently popular videos from YouTube.
+A demo project for tagging YouTube video via Google MLKit, it generates tags for currently popular videos from YouTube.
 
 ## Usage
 
